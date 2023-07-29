@@ -1,7 +1,7 @@
 import React from 'react'
-import Home from './container/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import MainListingPage from './components/MainListingPage'
 
 export default function App() { 
   return (
@@ -9,9 +9,9 @@ export default function App() {
     <div>
       
       <div> 
-        <Header></Header>
-        <Home></Home>
-        <Footer></Footer>
+        <Header />
+        <MainListingPage />
+        <Footer />
       </div>
      
     </div>

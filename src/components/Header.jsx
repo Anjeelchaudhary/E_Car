@@ -6,30 +6,38 @@ import logo from '../assets/images/logo/clothing-house-logo.png'
 
 export default function Header() {
   return (
-    <nav>
-        <div className='logo'>Az-ClothingHouse</div>
+    <div className=''>
+
+      <div className='flex items-center '>
         <img src={logo} alt="logo" className='rounded-full w-20 h-20'/>
-        <div className='explore'>
+        <div className=''>Az-ClothingHouse</div>
+      </div>
+
+      <div className='flex flex-col space-y-4'>
           <h1>Explore</h1>
-          <ul>
-            <li>Categories</li>
+
+          
+            <h1>Catagories</h1>
 
             <Link to={PageRoute.TRACKING}>
-              <li>Track product</li>
+                <h2 >Track product</h2>
             </Link>
+
             <Link to={PageRoute.OFFERS}>
-              <li>Best Offers</li>
+              <h2>Best Offers</h2>
             </Link>
             
             <Link to={PageRoute.SELLWITHUS}>
-              <li>Sell WithUs</li>
+              <h2>Sell WithUs</h2>
             </Link>
             
             <Link to={PageRoute.BLOG}> 
-            <li>Block</li>
+            <h2>Block</h2>
             </Link>
-          </ul>
         </div>
-    </nav>
+        
+    </div>
+    
+    
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import Home from '../container/Home'
+import Home from '../container/Body'
 import { Link } from 'react-router-dom'
 import { PageRoute } from '../env/env.route'
-import logo from '../assets/images/logo/clothing-house-logo.png'
+import logo from '../assets/images/logo/a-z-clothinghouse-logo.png'
 
 export default function Header() {
   return (
-    <div className=''>
+    <div className='bg-red-800'>
 
       <div className='flex items-center '>
         <img src={logo} alt="logo" className='rounded-full w-20 h-20'/>

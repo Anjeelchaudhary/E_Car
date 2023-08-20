@@ -1,43 +1,33 @@
 import React from 'react'
-import Home from '../container/Body'
 import { Link } from 'react-router-dom'
 import { PageRoute } from '../env/env.route'
 import logo from '../assets/images/logo/a-z-clothinghouse-logo.png'
 
 export default function Header() {
   return (
-    <div className='bg-red-800'>
+    <div className='bg-yellow-200 flex flex-row justify-between items-centre border-black'>
 
-      <div className='flex items-center '>
-        <img src={logo} alt="logo" className='rounded-full w-20 h-20'/>
+      <div className='flex items-center  border border-red-300'>
+        <img src={logo} alt="logo" className='rounded-full w-20 h-20' />
         <div className=''>Az-ClothingHouse</div>
       </div>
 
-      <div className='flex flex-col space-y-4'>
-          <h1>Explore</h1>
-
-          
-            <h1>Catagories</h1>
-
-            <Link to={PageRoute.TRACKING}>
-                <h2 >Track product</h2>
-            </Link>
-
-            <Link to={PageRoute.OFFERS}>
-              <h2>Best Offers</h2>
-            </Link>
-            
-            <Link to={PageRoute.SELLWITHUS}>
-              <h2>Sell WithUs</h2>
-            </Link>
-            
-            <Link to={PageRoute.BLOG}> 
-            <h2>Block</h2>
-            </Link>
+      <div className='flex flex-row items-center space-x-3 border justify-between border-blue-500'>
+        <div className='relative inline-block'>
+          <button type='button' className='drop'>Shop</button>
         </div>
         
+        <h1>MostWanted</h1>
+        <Link to={PageRoute.BLOG}>
+          <h2>Block</h2>
+        </Link>
+        <h1>NewArrival</h1>
+        <h1>Brand</h1>
+      </div>
+      <div className='flex flex-row border border-green-500 items-center justify-between'> For search</div>
+
     </div>
-    
-    
+
+
   )
 }

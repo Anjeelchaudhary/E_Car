@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PageRoute } from '../env/env.route'
 import logo from '../assets/images/logo/a-z-clothinghouse-logo.png'
 
 export default function Header() {
+  const DropDownBTN = () => {
+    const [isDropDownOpen , setIsDropDownOpen] = useState(false)
+    const toggleDropDown = () => {
+      setIsDropDownOpen(!isDropDownOpen)
+    }
+  }
+
   return (
     <div className='bg-yellow-200 flex flex-row justify-between items-centre border-black'>
 

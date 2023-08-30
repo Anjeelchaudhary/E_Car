@@ -13,8 +13,8 @@ export default function Home() {
         <div className='home__filters'>
           <SearchBar />
           <div className='home__filters-container'>
-            <CustomFilters title="fuels"/>
-            <CustomFilters title="years"/>
+            {/* <CustomFilters title="fuels"/>
+            <CustomFilters title="years"/> */}
 
           </div>
         </div>

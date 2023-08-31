@@ -17,5 +17,5 @@ export {
     CustomFilters,
     SearchManufacturer,
     CarCard,
-    CarDetails
+    CarDetails,
 }

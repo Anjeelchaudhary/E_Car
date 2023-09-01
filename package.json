@@ -26,6 +26,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "fraction.js": "^4.3.5",
     "next": "^13.4.19"
   }
 }

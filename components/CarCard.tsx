@@ -2,13 +2,13 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { carProps } from "@/types"
+import { CarProps } from "@/types"
 import {calculateCarRent ,generateCarImageUrl} from "@/utils"
 import CustomButton from "./CustomButton";
 import CarDetails from "./CarDetails";
 
 interface CarCardProps {
-  car: carProps;
+  car: CarProps;
 }
 
 const CarCard = ({car}: CarCardProps) => {
@@ -60,7 +60,7 @@ const CarCard = ({car}: CarCardProps) => {
           </div>
         </div>
         <div className="car-card__btn-container">
-          <CustomButton title="View More" containerStyle="w-full py-[16px]rounded-full bg-primary-blue" 
+          <CustomButton title="View More" containerStyles="w-full py-[16px]rounded-full bg-primary-blue" 
           textStyles="text-white text-[14] leading-[17px] font-bold" 
           rightIcon="/right-arrow.svg" 
           handleClick={() => setIsOpen(true)}/>

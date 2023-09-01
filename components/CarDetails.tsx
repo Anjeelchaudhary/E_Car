@@ -3,14 +3,14 @@
 import Image from "next/image";
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { carProps } from "@/types";
+import { CarProps } from "@/types";
 import { relative } from "path";
 import { generateCarImageUrl } from "@/utils";
 
 interface CarDetailsProps {
     isOpen: boolean;
     closeModel: () => void;
-    car: carProps;
+    car: CarProps;
 }
 
 
@@ -68,19 +68,16 @@ const CarDetails = ({ isOpen, closeModel, car }:
                                                 <Image src={generateCarImageUrl(car,'29')} alt="car model"
                                                     fill priority
                                                     className="object-contain" />
-
                                             </div>
                                             <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg ">
                                                 <Image src={generateCarImageUrl(car,'33')} alt="car model"
                                                     fill priority
                                                     className="object-contain" />
-
                                             </div>
                                             <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg ">
                                                 <Image src={generateCarImageUrl(car,'13')} alt="car model"
                                                     fill priority
                                                     className="object-contain" />
-
                                             </div>
                                         </div>
                                     </div>

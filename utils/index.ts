@@ -2,8 +2,6 @@
 // import { Result } from "postcss";
 
 import { FilterProps, CarProps } from "@/types";
-import { Filter } from "mongodb";
-import { type } from "os";
 
 // const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla';
 // const options = {
@@ -55,7 +53,7 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
     const url = new URL("https://cdn.imagin.studio/getimage");
     const { make, year, model } = car;
 
-    // url.searchParams.append('customer', 'hrjavascript-mastery');
+    // url.searchParams.append('customer', 'cars');
     // url.searchParams.append('make',make);
     // url.searchParams.append('modelFamily', model.split(' ')[0]);
     // url.searchParams.append('zoomType', 'fullscreen');
@@ -64,10 +62,10 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
     return `${url}`;
 }
 
-export const updateSearchParams = (type: string , value: string) => {
-   const searchParams = new URLSearchParams(window.location.search);
-   searchParams.set(type, value);
+export const updateSearchParams = (type: string, value: string) => {
+    const searchParams = new URLSearchParams(window.location.search);
+    searchParams.set(type, value);
 
-   const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
-   return newPathname;
+    const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
+    return newPathname;
 }
